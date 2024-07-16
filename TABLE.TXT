@@ -1,0 +1,13 @@
+CREATE TABLE `students` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `NAME` varchar(25) NOT NULL,
+  `ROLL_NO` int(11) NOT NULL,
+  `GENDER` enum('male','female','others') NOT NULL,
+  `ADDRESS` varchar(50) DEFAULT NULL,
+  `CITY` varchar(20) DEFAULT NULL,
+  `MOBILE_NO` bigint(20) NOT NULL,
+  `EMAIL` varchar(40) NOT NULL,
+  `STANDARD` varchar(20) NOT NULL,
+  `SECTION` varchar(20) NOT NULL,
+  PRIMARY KEY (`ID`)
+);
